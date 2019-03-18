@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <title>Volunteer form</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/modules.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
 </head>
@@ -22,29 +22,29 @@
 
       <form class="island-1-2 push-1-2 max-length" method="POST" action="…">
         <fieldset class="push-0 first">
-          <legend class="push giga pad-t-1-2 pad-b-1-8">Personal details</legend>
+          <legend class="push giga pad-t-1-2 pad-b-1-4">Personal details</legend>
 
           <div class="grid">
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push different">
               <label class="kilo pad-b-1-8" for="text">Full name</label>
               <input id="text" type="text" required>
-              <p class="push-0 micro italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+              <p class="push-0 pad-b-1-8 micro italic">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
             </div>
 
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push different">
               <label class="kilo pad-b-1-8" for="call">What should we call you?</label>
               <input id="call" type="text" required>
-              <p class="push-0 micro italic">What all your friends call you, e.g. “Liz”.</p>
+              <p class="push-0 pad-b-1-8 micro italic">What all your friends call you, e.g. “Liz”.</p>
             </div>
 
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push different">
               <label class="kilo pad-b-1-8" for="birth">Date of birth</label>
-              <input class="" id="birth" type="date" required>
+              <input class="maybe" id="birth" type="date" required>
             </div>
 
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push">
               <label class="kilo pad-b-1-8" for="subject">T-shirt size</label>
-              <select class="" id="subject">
+              <select class="maybe" id="subject">
                 <option value="">Select a t-shirt size</option>
                 <option>Fitted: XS</option>
                 <option>Fitted: S</option>
@@ -63,8 +63,8 @@
               <input id="email" type="email" required>
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push pad-b">
-              <label class="kilo pad-b-1-8" for="phone">Phone number <strong class="opt italic not-bold"(optional)</label>
-              <input id="phone" type="tel" required>
+              <label class="kilo pad-b-1-8" for="phone">Phone number <strong class="opt italic not-bold">(optional)</strong></label>
+              <input class="maybe pad-b-1-8" id="phone" type="tel" required>
             </div>
           </div>
         </fieldset>
@@ -72,7 +72,7 @@
 
       <form class="island-1-2 max-length" method="POST" action="…">
         <fieldset class="first">
-          <legend class="push giga pad-t-1-2">Address</legend>
+          <legend class="push giga pad-t-1-2 pad-b">Address</legend>
           <div class="grid">
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push different">
               <label class="kilo pad-b-1-8" for="address">Street address</label>
@@ -85,7 +85,7 @@
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2 push different">
               <label class="kilo pad-b-1-8" for="province">Province</label>
-              <select class="" id="province">
+              <select class="maybe" id="province">
                 <option value="">Select a province</option>
                 <option>Alberta</option>
                 <option>British Columbia</option>
@@ -179,7 +179,7 @@
                 <label class="kilo push-1-4" for="trail">Trail & hill climbing</label>
               </div>
             </div>
-            <div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
               <div>
                 <input type="checkbox" id="bush">
                 <label class="kilo push-1-4" for="bush">Bush craft</label>
@@ -246,7 +246,7 @@
         <div class="max-length">
           <div class="pad-t-1-2 pad-b-1-2">
             <footer class="kilo island-1-2">© Tree Hugger International Organization</footer>
-          <div>
+          </div>
         </div>
       </div>
     </div>
